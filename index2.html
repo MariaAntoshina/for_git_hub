@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div> 
+    <label for = "name">Кличка питомца</label>
+    <input type="text" id="name" />
+</div>
+<div>
+    <label for ="owner-name">Имя владельца</label> 
+    <input type="text" id="owner-name">
+</div>
+<div>
+    <label for = "owner-contacts">Контакты владельца</label> 
+    <input type="text" id="owner-contacts">
+</div>
+<div>
+    <label for = "cats-species">Порода питомца</label>
+    <select id="cats-species">
+        <option>Британец</option>
+        <option>Шотландская прямоухая</option>
+        <option>Мейн-кун</option>
+    </select>     
+</div>
+<fieldset>
+<legend>Чем питается</legend>
+<div>
+    <label for = "cat-food1">Сухой корм</label> 
+    <input type="checkbox" id="cat-food1"/>
+</div>
+<div>
+    <label for = "cat-food2">Влажный корм</label> 
+    <input type="checkbox" id="cat-food2"/>
+</div>
+<div>
+    <label for = "cat-food3">Натуральный корм</label> 
+    <input type="checkbox" id="cat-food3"/>
+</div>
+</fieldset>
+<div>
+Пол
+</div>
+<div> 
+    <form>
+        <input type="radio" name="sex" value ="f"/> Самка<br/>
+        <input type="radio" name="sex" value ="m"> Самец
+    </form>
+</div>
+<div>
+    <label for = "comments">Комментарий владельца</label> <br/>
+    <textarea rows="5" cols ="20" id="comments"></textarea>  
+</div>
+<div>
+    <label for = "photo">Приложить фото питомца</label> 
+    <input type="file" id="photo"/>
+</div>
+<div>
+    <button type="submit">Сохранить</button>
+</div>
+</body>
+
+</html>
