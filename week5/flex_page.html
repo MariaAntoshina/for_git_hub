@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .flexcontainer {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+            height: 100%;
+
+        }
+
+        .navigation {
+            font-size: large;
+            border: 1px solid black;
+            /* background-color: blue; */
+        }
+
+        .main1 {
+            display: flex;
+            border: 1px solid green;
+            justify-content: space-between;
+        }
+
+        .footer1 {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            justify-content: space-between;
+            height: 30vh;
+        }
+
+        .c_for_main_and_more {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            justify-content: space-between;
+            width: 150vh;
+            align-self: center;
+
+        }
+
+        .c_for_more {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-self: stretch;
+            height: 50vh;
+            justify-content: space-between;
+            border: 1px solid green;
+
+
+        }
+
+        .more3 {
+            align-self: center;
+            border: 1px solid green;
+
+        }
+
+        .final_c {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid green;
+
+        }
+
+        .main2 {
+
+            align-self: center;
+            border: 1px solid red;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            height: 20vh;
+            display: table-cell;
+            vertical-align: middle;
+            align-items: center;
+        }
+
+        .class_for_text_in_nav {
+            border: 1px solid black;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flexcontainer">
+        <div class="navigation">
+            <div class="class_for_text_in_nav">
+                Шапка страницы
+            </div>
+        </div>
+        <div class="main1">
+            <div class="c_for_main_and_more">
+                <div class="main2">
+                    Основная часть
+                </div>
+                <div class="c_for_more">
+                    <div class="final_c">
+                        <div class="more1">Еще 1</div>
+                        <div class="more2">Еще 2</div>
+                    </div>
+
+                    <div class="more3">Еще 3</div>
+                </div>
+            </div>
+            <aside>Боковая часть</aside>
+        </div>
+        <div class="footer1">
+            <footer>Секция футера 1</footer>
+            <footer>Секция футера 2</footer>
+            <footer>Секция футера 3</footer>
+            <footer>Секция футера 4</footer>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
